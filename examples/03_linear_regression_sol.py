@@ -62,8 +62,13 @@ with tf.Session() as sess:
 	# Step 9: output the values of w and b
 	w, b = sess.run([w, b]) 
 
+plt.rcParams['font.sans-serif']=['SimHei'] #用来正常显示中文标签
+plt.rcParams['axes.unicode_minus']=False #用来正常显示负号
+
 # plot the results
 X, Y = data.T[0], data.T[1]
+plt.xlabel(u"火宅次数（每1000户）")
+plt.ylabel(u"盗窃次数（每1000人）")
 plt.plot(X, Y, 'bo', label='Real data')
 plt.plot(X, X * w + b, 'r', label='Predicted data')
 plt.legend()
