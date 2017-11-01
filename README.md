@@ -30,5 +30,19 @@ Exercises to be familiar with other special TensorFlow ops<br>
 Demonstration of the danger of lazy loading <br>
 Convolutional GRU (CRGU) (by Lukasz Kaiser)
 
+## 附录
 
+### 错误记录
 
+**[OSX] python is not install as frameword**
+```text
+from matplotlib.backends import _macosx
+RuntimeError: Python is not installed as a framework. The Mac OS X backend will not be able to function correctly if Python is not installed as a framework. 
+```
+
+just run 
+```commandline
+echo "backend: TkAgg" >> ~/.matplotlib/matplotlibrc
+```
+
+enjoy!
