@@ -1,9 +1,9 @@
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
-
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
+
+os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 
 # Step 1: 构造虚拟数据:随机生成 100 条数据
 data_len = 100

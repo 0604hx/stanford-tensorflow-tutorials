@@ -32,6 +32,8 @@ Convolutional GRU (CRGU) (by Lukasz Kaiser)
 
 ## 附录
 
+python version : `3.5+`
+
 ### 错误记录
 
 **[OSX] python is not install as frameword**
@@ -46,3 +48,9 @@ echo "backend: TkAgg" >> ~/.matplotlib/matplotlibrc
 ```
 
 enjoy!
+
+**pip 安装 scipy 失败**
+
+提示信息：`numpy.distutils.system_info.NotFoundError: no lapack/blas resources found`
+
+此时从 [python extension](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy) 下载与系统匹配的 `whl` 文件，然后执行：`pip install {whl 文件路径}` 即可完成安装
