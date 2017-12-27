@@ -19,7 +19,7 @@ n_epochs = 30
 # 定义输入输出
 # MNIST 中每张图片是 28*28 像素，则共 784 个点数据，所以输入是 1*784 的1阶张量
 # 结果数据是 0-9 ，用 1*10 的 one-hot 向量表示
-# 如 0 为 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+# 如 0 为 [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 # 如 4 为 [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
 X = tf.placeholder(tf.float32, [batch_size, 784], name="X_placeholder")
 Y = tf.placeholder(tf.int32, [batch_size, 10], name="Y_placeholder")
